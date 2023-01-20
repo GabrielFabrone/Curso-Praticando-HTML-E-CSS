@@ -1,0 +1,169 @@
+:root {
+    --branco-principal:#FFFFFF;
+    --cinza-secundario:#C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/* Combo Plus Plano */
+.principal {
+    background-image: url("/imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--branco-principal);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+/* Assista do seu Jeito */
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+/*Assine o combo PLus */
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+/*Disponivel nos dispositivos*/
+
+.titulo__lista--centralizado {
+    text-align: center;
+}
+
+.container__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2em 0 6em 0;
+}
+
+.lista__items {
+    text-align: center;
+}
+
+.titulo__lista {
+    font-size: 32px;
+}
+
+/*Rodape*/
+
+.rodape {
+    text-align: center;
+    align-items: center;
+}
+
+.container__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__logo {
+    margin-bottom: 2em;
+    display: block;
+}
+
+.container__rodape {
+    width: 85vw;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 6em;
+}
+
+.rodape__lista {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    column-gap: 2em;
+}
+
+.rodape__texto {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    margin: 2em 0;
+    line-height: 1.5em;
+}
+
+.lista__link {
+    font-size: 16px;
+}
+
+.lista__link a:hover {
+    opacity: 0.7;
+}
+
+.container__botao:hover {
+    opacity: 0.8;
+    transition: .25ms;
+}
